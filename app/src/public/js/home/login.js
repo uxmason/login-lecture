@@ -1,13 +1,13 @@
 "use strict"
 
 const id = document.querySelector("#id");
-const password = document.querySelector("#password");
+const psword = document.querySelector("#password");
 const loginBtn = document.querySelector("#button");
 
 loginBtn.addEventListener("click", () => {
     const req = {
         id: id.value,
-        psword: password.value
+        psword: psword.value
     }
     fetch('/login', {
         method: "POST",

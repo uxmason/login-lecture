@@ -29,6 +29,6 @@ registerBtn.addEventListener("click", () => {
         }
     })
     .catch((err) => {
-        console.err(new Error('회원가입 중 에러 발생'))
+        console.log('회원가입 중 에러 발생', err)
     })
 })
